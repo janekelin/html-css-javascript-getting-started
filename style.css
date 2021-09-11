@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: papayawhip;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    margin: .5em 0;
+}
+
+header {
+    background-color: rgb(151, 3, 3);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+nav a:link,
+nav a:visited {
+    color: wheat;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+main {
+    background-image: url("images/background.png");
+    min-height: 85%;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+
+footer {
+    padding: 15px;
+}
+
+footer nav a:link,
+footer nav a:visited {
+    color: rgb(151, 3, 3);
+}
+
+section {
+    padding: 2em;
+}
+
+.c-logo {
+    text-align: center;
+}
+
+.c-content {
+    width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    .c-logo {
+        margin-left: 2%;
+    }
+}
+
+.c-page--start h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+
+.c-page--start .c-banner {
+    max-width: 100%;
+}
+
+.c-page--start .c-sub-title {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 1.5em;
+    padding: 15px 25px;
+
+}

@@ -8,50 +8,59 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Bethany's Pie Shop</a></li>
-          <li><a href="pies.html">Pies</a></li>
-          <li><a href="contact.html">Contact</a></li>
+    <header class="c-header">
+      <nav class="o-nav c-nav">
+        <ul class="o-nav__list c-nav__list">
+          <li class="o-nav__list-item c-nav__list-item">
+            <a class="o-nav__item-link c-nav__item-link" href="/">Bethany's Pie Shop</a>
+          </li>
+          <li class="o-nav__list-item c-nav__list-item">
+            <a class="o-nav__item-link c-nav__item-link" href="pies.html">Pies</a>
+          </li>
+          <li class="o-nav__list-item c-nav__list-item">
+            <a class="o-nav__item-link c-nav__item-link" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="c-content-container">
       <section class="c-logo"><img src="images/logo.png" alt="Bethany's Pie Shop" /></section>
       <section class="c-content">
         <h1>Pies</h1>
-
         <section class="c-card-list">
           <article class="c-card">
-            <img src="images/apple-pie.png" alt="Apple Pie" />
+            <img class="c-card__img" src="images/apple-pie.png" alt="Apple Pie" />
             <section class="c-card__content">
               <h2 class="c-card__title">Apple Pie</h2>
               <div class="c-card__price">$12.95</div>
             </section>
             <p class="c-card__desc">Our famous apple pie</p>
-            <button data-order="apple-pie">Order</button>
+            <button class="c-card__button" data-order="apple-pie">Order</button>
           </article>
-
           <article class="c-card">
-            <img src="images/cherry-pie.png" alt="Chery Pie" />
+            <img class="c-card__img" src="images/cherry-pie.png" alt="Chery Pie" />
             <section class="c-card__content">
               <h2 class="c-card__title">Cherry Pie</h2>
               <div class="c-card__price">$15.95</div>
             </section>
             <p class="c-card__desc">A summer classic!</p>
-            <button data-order="cherry-pie">Order</button>
+            <button class="c-card__button" data-order="cherry-pie">Order</button>
           </article>
         </section>
       </section>
     </main>
-
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="/">Bethany's Pie Shop</a></li>
-          <li><a href="pies.html">Pies</a></li>
-          <li><a href="contact.html">Contact</a></li>
+    <footer class="c-footer">
+      <nav class="o-nav c-nav c-nav--footer">
+        <ul class="o-nav__list c-nav__list">
+          <li class="o-nav__list-item c-nav__list-item">
+            <a class="o-nav__item-link c-nav__item-link" href="/">Bethany's Pie Shop</a>
+          </li>
+          <li class="o-nav__list-item c-nav__list-item">
+            <a class="o-nav__item-link c-nav__item-link" href="pies.html">Pies</a>
+          </li>
+          <li class="o-nav__list-item c-nav__list-item">
+            <a class="o-nav__item-link c-nav__item-link" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </footer>

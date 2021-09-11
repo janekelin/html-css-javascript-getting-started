@@ -5,54 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pies | Bethany's Pie Shop</title>
-    <link rel="stylesheet" href="site.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/">Bethany's Pie Shop</a></li>
           <li><a href="pies.html">Pies</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <aside>
-        <img src="images/logo.png" alt="Bethany's Pie Shop" />
-      </aside>
-
-      <article>
+      <section class="c-logo"><img src="images/logo.png" alt="Bethany's Pie Shop" /></section>
+      <section class="c-content">
         <h1>Pies</h1>
 
-        <section class="columns-desktop">
-          <div class="pie">
+        <section class="c-card-list">
+          <article class="c-card">
             <img src="images/apple-pie.png" alt="Apple Pie" />
-            <div class="columns">
-              <div class="title">Apple Pie</div>
-              <div class="price">$12.95</div>
-            </div>
-            <p class="desc">Our famous apple pie</p>
+            <section class="c-card__content">
+              <h2 class="c-card__title">Apple Pie</h2>
+              <div class="c-card__price">$12.95</div>
+            </section>
+            <p class="c-card__desc">Our famous apple pie</p>
             <button data-order="apple-pie">Order</button>
-          </div>
+          </article>
 
-          <div class="pie">
+          <article class="c-card">
             <img src="images/cherry-pie.png" alt="Chery Pie" />
-            <div class="columns">
-              <div class="title">Cherry Pie</div>
-              <div class="price">$15.95</div>
-            </div>
-            <p class="desc">A summer classic!</p>
+            <section class="c-card__content">
+              <h2 class="c-card__title">Cherry Pie</h2>
+              <div class="c-card__price">$15.95</div>
+            </section>
+            <p class="c-card__desc">A summer classic!</p>
             <button data-order="cherry-pie">Order</button>
-          </div>
+          </article>
         </section>
-      </article>
+      </section>
     </main>
 
     <footer>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/">Bethany's Pie Shop</a></li>
           <li><a href="pies.html">Pies</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>

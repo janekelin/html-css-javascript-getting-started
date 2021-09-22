@@ -27,13 +27,9 @@ section {
 /* NAVIGATION OBJECT */
 
 .o-nav__list {
-    display: inline;
+    display: flex;
+    list-style-type: none;
     padding: 0;
-}
-
-.o-nav__list-item {
-    display: inline-block;
-    list-style: none;
 }
 
 .o-nav__item-link:link,
@@ -174,4 +170,3 @@ section {
     font-size: 1.5em;
     padding: 1em 2em;
 }
-

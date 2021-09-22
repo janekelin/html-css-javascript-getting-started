@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pies | Bethany's Pie Shop</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-  </head>
-  <body>
-    <header class="c-header">
-      <nav class="o-nav c-nav">
-        <ul class="o-nav__list c-nav__list">
-          <li class="o-nav__list-item c-nav__list-item">
-            <a class="o-nav__item-link c-nav__item-link" href="/">Bethany's Pie Shop</a>
-          </li>
-          <li class="o-nav__list-item c-nav__list-item">
-            <a class="o-nav__item-link c-nav__item-link" href="pies.html">Pies</a>
-          </li>
-          <li class="o-nav__list-item c-nav__list-item">
-            <a class="o-nav__item-link c-nav__item-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="c-content-container">
-      <section class="c-logo"><img src="images/logo.png" alt="Bethany's Pie Shop" /></section>
-      <section class="c-content">
-        <h1>Pies</h1>
-        <section class="c-card-list">
-          <article class="c-card">
-            <img class="c-card__img" src="images/apple-pie.png" alt="Apple Pie" />
-            <section class="c-card__content">
-              <h2 class="c-card__title">Apple Pie</h2>
-              <div class="c-card__price">$12.95</div>
-            </section>
-            <p class="c-card__desc">Our famous apple pie</p>
-            <button class="c-card__button" data-order="apple-pie">Order</button>
-          </article>
-          <article class="c-card">
-            <img class="c-card__img" src="images/cherry-pie.png" alt="Chery Pie" />
-            <section class="c-card__content">
-              <h2 class="c-card__title">Cherry Pie</h2>
-              <div class="c-card__price">$15.95</div>
-            </section>
-            <p class="c-card__desc">A summer classic!</p>
-            <button class="c-card__button" data-order="cherry-pie">Order</button>
-          </article>
-        </section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pies | Bethany's Pie Shop</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <header class="c-header">
+    <nav class="o-nav c-nav">
+      <ul class="o-nav__list c-nav__list">
+        <li class="o-nav__list-item c-nav__list-item">
+          <a class="o-nav__item-link c-nav__item-link" href="/">Bethany's Pie Shop</a>
+        </li>
+        <li class="o-nav__list-item c-nav__list-item">
+          <a class="o-nav__item-link c-nav__item-link" href="pies.html">Pies</a>
+        </li>
+        <li class="o-nav__list-item c-nav__list-item">
+          <a class="o-nav__item-link c-nav__item-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="c-content-container">
+    <section class="c-logo"><img src="images/logo.png" alt="Bethany's Pie Shop" /></section>
+    <section class="c-content">
+      <h1>Pies</h1>
+      <section class="c-card-list">
+        <article id="apple-pie" class="c-card">
+          <img class="c-card__img" src="images/apple-pie.png" alt="Apple Pie" />
+          <section class="c-card__content">
+            <h2 class="c-card__title js-title">Apple Pie</h2>
+            <div class="c-card__price js-price">$12.95</div>
+          </section>
+          <p class="c-card__desc js-desc">Our famous apple pie</p>
+          <button class="c-card__button" data-order="apple-pie">Order</button>
+        </article>
+        <article id="cherry-pie" class="c-card">
+          <img class="c-card__img" src="images/cherry-pie.png" alt="Cherry Pie" />
+          <section class="c-card__content">
+            <h2 class="c-card__title js-title">Cherry Pie</h2>
+            <div class="c-card__price js-price">$15.95</div>
+          </section>
+          <p class="c-card__desc js-desc">A summer classic!</p>
+          <button class="c-card__button" data-order="cherry-pie">Order</button>
+        </article>
       </section>
-    </main>
-    <footer class="c-footer">
-      <nav class="o-nav c-nav c-nav--footer">
-        <ul class="o-nav__list c-nav__list">
-          <li class="o-nav__list-item c-nav__list-item">
-            <a class="o-nav__item-link c-nav__item-link" href="/">Bethany's Pie Shop</a>
-          </li>
-          <li class="o-nav__list-item c-nav__list-item">
-            <a class="o-nav__item-link c-nav__item-link" href="pies.html">Pies</a>
-          </li>
-          <li class="o-nav__list-item c-nav__list-item">
-            <a class="o-nav__item-link c-nav__item-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
-  <script>
-    window.addEventListener("DOMContentLoaded", function(e) {
-      const orderButtons = document.querySelectorAll("button[data-order]");
+    </section>
+  </main>
+  <footer class="c-footer">
+    <nav class="o-nav c-nav c-nav--footer">
+      <ul class="o-nav__list c-nav__list">
+        <li class="o-nav__list-item c-nav__list-item">
+          <a class="o-nav__item-link c-nav__item-link" href="/">Bethany's Pie Shop</a>
+        </li>
+        <li class="o-nav__list-item c-nav__list-item">
+          <a class="o-nav__item-link c-nav__item-link" href="pies.html">Pies</a>
+        </li>
+        <li class="o-nav__list-item c-nav__list-item">
+          <a class="o-nav__item-link c-nav__item-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+<script>
+  window.addEventListener("DOMContentLoaded", function (e) {
+    const orderButtonCollection = document.querySelectorAll("button[data-order]");
 
-      orderButtons.forEach(function(button) {
-        
-        button.addEventListener("click", function(e) {
-          const button = e.currentTarget;
-          const container = button.parentNode;
+    orderButtonCollection.forEach(function (button) {
+      button.addEventListener("click", function (e) {
+        const button = e.currentTarget;
+        const container = button.parentNode;
 
-          const order = {
-            id: (id = button.getAttribute("data-order")),
-            title: container.querySelector(".title").innerText,
-            price: container.querySelector(".price").innerText,
-            desc: container.querySelector(".desc").innerText
-          };
+        const order = {
+          id: (id = button.getAttribute("data-order")),
+          title: container.querySelector(".js-title").innerText,
+          price: container.querySelector(".js-price").innerText,
+          desc: container.querySelector(".js-desc").innerText
+        };
 
-          localStorage.setItem("order", JSON.stringify(order));
+        localStorage.setItem("order", JSON.stringify(order));
 
-          const url = window.location.href.replace("pies.html", "order.html");
-          window.location.href = url;
-        });
+        const url = window.location.href.replace("pies.html", "order.html");
+        window.location.href = url;
       });
     });
-  </script>
+  });
+</script>
+
 </html>

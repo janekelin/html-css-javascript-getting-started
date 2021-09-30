@@ -51,12 +51,15 @@ section {
 /* NAVIGATION COMPONENT */
 
 .c-nav__list-item {
+    color: wheat;
+    font-weight: bold;
     margin: 0 0.5rem;
 }
 
 .c-nav__item-link:link,
 .c-nav__item-link:visited {
-    color: wheat;
+    color: inherit;
+    font-weight: initial;
 }
 
 .c-nav--footer .c-nav__item-link:link,
